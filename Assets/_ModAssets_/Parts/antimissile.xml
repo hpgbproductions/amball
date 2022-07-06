@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Part name="antimissile">
+  <PartType id="Mod_AntiMissileBall_antimissile" name="antimissile" modPrefabPath="Assets/_ModAssets_/Parts/antimissile.prefab" mass="100" health="100" damageDisconnect="true" sharesRigidBody="false" combineMeshes="false" disconnectForce="10" underwaterDragScalar="30" defaultMaterials="0,1,-1,-1">
+    <Modifiers>
+      <ModModifier id="AntiMissileBall_AntiMissile" type="AntiMissile, AntiMissileBall-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <DefaultState _active="true" _smartAlloc="true" _maxRotationLeft="45" _maxRotationRight="45" _maxElevation="45" _maxDepression="45" _horizontalSpeed="360" _verticalSpeed="360" _lockAngle="10" _maxRange="5000" _detonateTime="3" _laserTime="2" _reloadTime="0.5" _maxAmmo="8" _colorR="1" _colorG="0" _colorB="0" _colorA="0.5" _laserWidth="0.1" />
+      </ModModifier>
+    </Modifiers>
+    <AttachPoints>
+      <AttachPoint adaptiveIgnore="false" a="1111" allowRotation="false" display="false" displayWhenDragged="true" fuselageConnection="false" ignoreGrid="false" ignoreSurface="false" jointType="Fixed" wingAttach="false" normal="0,-1,0" position="0,-0.5,0" />
+      <AttachPoint adaptiveIgnore="false" a="1111" allowRotation="false" display="false" displayWhenDragged="true" fuselageConnection="false" ignoreGrid="false" ignoreSurface="false" jointType="Fixed" wingAttach="false" normal="0,0,-1" position="0,0,-0.5" />
+    </AttachPoints>
+  </PartType>
+  <DesignerPart name="Anti Missile System" category="Weapons" description="Destroys incoming missiles and other explosive weapons.">
+    <Assembly>
+      <Parts>
+        <Part id="1" partType="Mod_AntiMissileBall_antimissile" position="0,0,0" rotation="0,0,0" />
+      </Parts>
+    </Assembly>
+  </DesignerPart>
+</Part>

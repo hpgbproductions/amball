@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModManifest buildID="02d6a113-5679-4fe4-b35c-cb086302cc8f">
+  <Mod name="Anti Missile Ball" author="hpgbproductions" versionMajor="1" versionMinor="0" loadPriority="1000" lastUpdated="2022-07-06T17:19:04.1844614Z" apiVersion="1.0.0.0" description="Shoots down both surface- and air-launched weaponry.&#xA;&#xA;Praise the ORB, for it will lead you to glory (mission accomplishments)">
+    <Steam title="" visibility="Public" previewPath="" language="English" tags="">
+      <description></description>
+    </Steam>
+    <GameObjects>
+      <GameObject name="antimissile" path="Assets/_ModAssets_/Parts/antimissile.prefab" />
+    </GameObjects>
+    <Assets>
+      <Asset path="Assets/Supply/amball.obj" />
+    </Assets>
+    <MaterialShaderMap />
+    <Assemblies>
+      <Assembly name="AntiMissileBall-Assembly-CSharp.dll" path="Assets/_ModAssets_/AntiMissileBall-Assembly-CSharp.dll.bytes" isProjectAssembly="true" />
+    </Assemblies>
+    <Sections>
+      <SimplePlanesMod apiVersion="1.0.0.0">
+        <Maps />
+        <Levels />
+        <Parts>
+          <Part name="antimissile" prefabPath="Assets/_ModAssets_/Parts/antimissile.prefab" xmlPath="Assets/_ModAssets_/Parts/antimissile.xml" />
+        </Parts>
+        <DesignerPlugins />
+        <MapPlugins />
+        <PersistentObjects />
+      </SimplePlanesMod>
+    </Sections>
+  </Mod>
+</ModManifest>
